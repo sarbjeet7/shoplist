@@ -18,7 +18,7 @@ function App() {
     }
    
 
-    gapi.load("clinet:auth2", start);
+    gapi.load("client:auth2", start);
   });
 
   return (
