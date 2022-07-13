@@ -6,6 +6,8 @@ function Login() {
 
     const onSuccess=(res)=> {
         console.log("Login Successfully");
+        localStorage.setItem("googleId", res.profileObj.email);
+        window.location="/Shoplist";
     }
 
    const onFailure = (res)=> {
@@ -28,5 +30,3 @@ function Login() {
 }
 
 export default Login;
-
-
